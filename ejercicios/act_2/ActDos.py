@@ -1,26 +1,26 @@
-# Inicializar el saldo a cero y la lista de operaciones vacía
+# Inicializa el saldo a cero y la lista de operaciones vacía
 saldo = 0
 operaciones = []
 
-# Pedir al usuario que realice una operación hasta que decida terminar
+# Pide al usuario que realice una operación hasta que decida terminar
 while True:
-    # Mostrar las opciones de operación
+    # Muestra las opciones de operación
     print("¿Qué operación desea realizar?")
     print("1. Ingreso")
     print("2. Reintegro")
     print("3. Salir")
 
-    # Pedir al usuario que ingrese una opción
+    # Pide al usuario que ingrese una opción
     opcion = input("Ingrese el número de la operación que desea realizar: ")
 
-    # Realizar operación de ingreso
+    # Ingreso de dinero
     if opcion == "1":
         cantidad = float(input("Ingrese la cantidad a ingresar: "))
         saldo += cantidad  # Actualizar el saldo
         operaciones.append(cantidad)  # Agregar la cantidad a la lista de operaciones
         print(f"El saldo actual es: {saldo}")
 
-    # Realizar operación de reintegro
+    # Operación de sacar dinero
     elif opcion == "2":
         cantidad = float(input("Ingrese la cantidad a sacar: "))
         if saldo < cantidad:  # Comprobar si hay suficiente saldo
@@ -34,7 +34,6 @@ while True:
     elif opcion == "3":
         break
 
-    # Opción inválida
     else:
         print("Opción inválida.")
 

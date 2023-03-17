@@ -31,7 +31,7 @@ def reservar_butaca():
         break
 
 
-# Mostrar la matriz de butacas y preguntar por reservas hasta que el usuario no quiera hacer más
+# Muestra la matriz de butacas y pregunta por reservas hasta que el usuario no quiera hacer más
 while True:
     mostrar_butacas()
     respuesta = input('¿Quieres hacer una reserva? (S/N): ')
